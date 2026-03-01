@@ -23,6 +23,7 @@ jobs:
             cd /var/www/central-de-links
 
             echo "--- Pulling latest code ---"
-            git pull origin main
+            git fetch origin main
+            git reset --hard origin/main
 
             echo "--- Deploy concluído (site estático) ---"
