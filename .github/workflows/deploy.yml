@@ -7,23 +7,26 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to Production
+    name: Deploy
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.0
-        with:
-          host: ${{ secrets.DO_HOST }}
-          username: ${{ secrets.DO_USER }}
-          key: ${{ secrets.DO_SSH_KEY }}
-          port: ${{ secrets.DO_PORT }}
-          script: |
-            set -e
-            cd /var/www/central-de-links
+      - name: Checkout
+        uses: actions/checkout@v4
 
-            echo "--- Pulling latest code ---"
-            git fetch origin main
-            git reset --hard origin/main
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DO_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p ${{ secrets.DO_PORT }} -H ${{ secrets.DO_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
 
-            echo "--- Deploy concluído (site estático) ---"
+      - name: Sync to server
+        run: |
+          rsync -az --delete \
+            --exclude='.git/' \
+            -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.DO_PORT }} -o StrictHostKeyChecking=no" \
+            ./ ${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:/var/www/central-de-links/
+
+      - name: Done
+        run: echo "Deploy concluído"
