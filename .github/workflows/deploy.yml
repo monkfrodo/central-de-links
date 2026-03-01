@@ -33,4 +33,4 @@ jobs:
             ./ ${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:/var/www/central-de-links/
 
       - name: Done
-        run: echo "--- Deploy concluído: links.integros.org ---"
+        run: echo "Deploy concluido - links.integros.org"
