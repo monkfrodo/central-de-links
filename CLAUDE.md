@@ -1,5 +1,7 @@
 # Central de Links — PWA de Gerenciamento de Links
 
+> **Atenção (2026-09-24):** este repo NÃO é a fonte do que está no ar em `links.integros.org`. O projeto Cloudflare `central-de-links` publica a página "Kevin Eger | Projetos e iniciativas", versionada em `monkfrodo/links-integros` (com autodeploy). Este PWA não está publicado em lugar nenhum hoje; o workflow antigo do DigitalOcean foi desativado.
+
 ## O que é
 
 Progressive Web App (PWA) para gerenciar e organizar links comerciais da Íntegros — checkouts, landing pages, páginas de vendas, upsells, etc. Funciona 100% offline no navegador usando localStorage. Permite busca, filtro por categoria, copiar links, adicionar/editar/remover, exportar/importar JSON.
