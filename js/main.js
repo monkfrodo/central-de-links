@@ -1,13 +1,13 @@
 const D=[
   {n:"Newsletter - Captura",u:"https://news.somosintegros.com.br",p:"Integros",c:"Landing Page",s:"Ativo",pl:"Proprio",no:"Pagina de captura de leads para newsletter"},
   {n:"App - Caixa de Ferramentas",u:"https://app.somosintegros.com.br",p:"Integros",c:"Landing Page",s:"Ativo",pl:"Proprio",no:"Caixa de ferramentas da Integros"},
-  {n:"Low-ticket R$47",u:"https://pay.assiny.com.br/80ff50/node/WpqMFP",p:"Low-ticket",c:"Checkout",s:"Ativo",pl:"Assiny",no:"11x de R$5,06"},
+  {n:"Low-ticket R$47",u:"https://pay.assiny.com.br/b5bce2/node/CNWgKK",p:"Low-ticket",c:"Checkout",s:"Ativo",pl:"Assiny",no:"11x de R$5,06"},
   {n:"Fundamentos R$4.000 (a vista)",u:"https://pay.assiny.com.br/30597e/node/BEEZT1",p:"Fundamentos",c:"Checkout",s:"Ativo",pl:"Assiny",no:"12x de R$399,93"},
   {n:"Fundamentos R$4.000 (2x de 2k)",u:"https://pay.assiny.com.br/544c64/node/VeGATE",p:"Fundamentos",c:"Checkout",s:"Ativo",pl:"Assiny",no:"2x de R$2.000,00"},
   {n:"Fundamentos R$4.000 (4x de 1k)",u:"https://pay.assiny.com.br/953704/node/0UjW4x",p:"Fundamentos",c:"Checkout",s:"Ativo",pl:"Assiny",no:"4x de R$1.000,00"},
-  {n:"Fundamentos R$3.500",u:"https://pay.assiny.com.br/b965f8/node/faE2ah",p:"Fundamentos",c:"Checkout",s:"Ativo",pl:"Assiny",no:"12x de R$349,94"},
+  {n:"Fundamentos R$3.500",u:"https://pay.assiny.com.br/1cc60b/node/f7JoGI",p:"Fundamentos",c:"Checkout",s:"Ativo",pl:"Assiny",no:"12x de R$349,94"},
   {n:"Fundamentos R$2.000 (entrada)",u:"https://pay.assiny.com.br/_l2cT3/node/TMujGp",p:"Fundamentos",c:"Checkout",s:"Ativo",pl:"Assiny",no:"12x de R$199,97"},
-  {n:"A Bussola R$497",u:"https://pay.assiny.com.br/686ce1/node/LiXCJM",p:"A Bussola",c:"Checkout",s:"Ativo",pl:"Assiny",no:"12x de R$49,69"},
+  {n:"A Bussola R$497",u:"https://pay.assiny.com.br/4cf810/node/yRpWDs",p:"A Bussola",c:"Checkout",s:"Ativo",pl:"Assiny",no:"12x de R$49,69"},
   {n:"Integros R$25.004,25",u:"https://pay.assiny.com.br/180d82/node/HiiFt1",p:"Integros",c:"Checkout",s:"Ativo",pl:"Assiny",no:"12x de R$2.500,00"}
 ];
 
